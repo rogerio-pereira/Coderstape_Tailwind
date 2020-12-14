@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' rel="stylesheet">
+    </head>
+    <body>
+        <!--
+            Borders thickness
+
+            Thickness
+            0           0px
+            [empty]     1px
+            2           2px
+            4           4px
+            8           8px
+        -->
+        <div class="bg-red-200 m-16 w-32 h-32 border">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-0">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-2">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-4">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-8">&nbsp;</div>
+
+
+        <!--
+            Borders sides
+            use the same table for thickness
+        -->
+        <div class="bg-red-200 m-16 w-32 h-32 border-t-2">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-b-2">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-l-2">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border-r-2">&nbsp;</div>
+
+
+        <!--
+            Borders colors
+        -->
+        <div class="bg-red-200 m-16 w-32 h-32 border-t-8 border-blue-800">&nbsp;</div>
+
+
+        <!--
+            Borders styles
+            solid
+            dashed
+            dotted
+            double
+            
+            none
+        -->
+        <div class="bg-red-200 m-16 w-32 h-32 border-t-8 border-blue-800 border-double">&nbsp;</div>
+
+
+        <!--
+            Borders radius
+            sm          .125rem     2px
+            [empty]     .25rem      4px
+            lg          .5rem       8px
+            full        -           9999px
+
+            none        0           0px
+        -->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-sm">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-lg">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-full">&nbsp;</div>
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-none">&nbsp;</div>
+        <!--Sides-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-t-full">&nbsp;</div> <!--top-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-r-full">&nbsp;</div> <!--left-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-b-full">&nbsp;</div> <!--bottom-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-l-full">&nbsp;</div> <!--right-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-tl-full">&nbsp;</div> <!--top-left-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-tr-full">&nbsp;</div> <!--top-right-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-br-full">&nbsp;</div> <!--bottom-right-->
+        <div class="bg-red-200 m-16 w-32 h-32 border border-blue-800 rounded-bl-full">&nbsp;</div> <!--bottom-left-->
+    </body>
+</html>
