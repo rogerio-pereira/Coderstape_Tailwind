@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' rel="stylesheet">
+    </head>
+    <body>
+        <!--Flex-->
+        <!--Example 1-->
+        <div class="mb-4">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <!--Example 1-b-->
+        <div class="mb-4 flex">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+
+        <!--Flex box direction horizontal-->
+        <div class="mb-4 flex justify-start">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 flex justify-center">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 flex justify-end">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 flex justify-between">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 flex justify-around">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+
+        <!--Flex box direction vertical-->
+        <div class="mb-4 bg-blue-500 h-screen flex items-center">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 bg-blue-500 h-64 flex items-end">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="flex items-end">
+            <div class="text-2xl">&bull;</div>
+            <p class="text-5xl">Hello World</p>
+        </div>
+        <div class="flex items-baseline">
+            <div class="text-2xl">&bull;</div>
+            <p class="text-5xl">Hello World</p>
+        </div>
+        <div class="flex items-center">
+            <div class="text-2xl">&bull;</div>
+            <p class="text-5xl">Hello World</p>
+        </div>
+        <!--Container is the size of element-->
+        <div class="flex items-start">
+            <div class="text-2xl bg-blue-500">&bull;</div>
+            <p class="text-5xl">Hello World</p>
+        </div>
+        <!--Extends full-height of container-->
+        <div class="flex items-stretch mb-4">
+            <div class="text-2xl bg-blue-500">&bull;</div>
+            <p class="text-5xl">Hello World</p>
+        </div>
+
+        <!--Flexbox direction-->
+        <div class="mb-4 h-64 bg-blue-300 flex flex-row">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 h-64 bg-blue-300 flex flex-row-reverse">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 h-64 bg-blue-300 flex flex-col">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <!--Flip the main axis to center vertically instead of horizontally-->
+        <div class="mb-4 h-64 bg-blue-300 flex flex-col justify-center">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 h-64 bg-blue-300 flex flex-col items-center">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 h-64 bg-blue-300 flex flex-col-reverse">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+
+        <!--Flexbox wrap-->
+        <!--Defaul is flex-no-wrap-->
+        <div class="mb-4 h-64 bg-blue-300 flex flex">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <div class="mb-4 h-64 bg-blue-300 flex flex-wrap">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+        <!--Reverse the order of the rows not the items itself-->
+        <div class="mb-4 h-64 bg-blue-300 flex flex-wrap-reverse">
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+            <div class="bg-yellow-700 w-16 h-16">1</div>
+            <div class="bg-teal-700 w-16 h-16">2</div>
+            <div class="bg-red-700 w-16 h-16">3</div>
+        </div>
+    </body>
+</html>
