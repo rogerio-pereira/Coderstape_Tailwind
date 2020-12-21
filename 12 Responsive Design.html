@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' rel="stylesheet">
+    </head>
+    <body class='bg-blue-500 sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-pink-500'>
+        <!--
+            Breakpoint  Starts at
+            [ALL]       0px
+            sm          640px
+            md          768px
+            lg          1024px
+            xl          1280px
+
+
+            Classes
+            bg-*    Background
+            w-*     Width
+            h-*     Height
+            p-*     Padding
+            m-*     Margin
+            All fonts and text classes
+            borders
+            rounded
+            flex[-*]
+        -->
+        <div class="p-4 mb-32 sm:p-32 sm:font-bold sm:border md:italic">Some Text inside of this div</div>
+
+        <div class="bg-blue-500 flex flex-col sm:flex-row">
+            <div class="w-32 h-32 bg-gray-200 border">A</div>
+            <div class="w-32 h-32 bg-gray-200 border">B</div>
+        </div>
+    </body>
+</html>
